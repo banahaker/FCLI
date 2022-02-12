@@ -36,7 +36,7 @@ public:
 namespace FCLI {
     class CreateApp {
     public:
-        void text(char const* color, std::string text) {
+        void text(char* const color, std::string text) {
             if (color == "green") std::cout << GREEN << text << RESET;
             else if (color == "red") std::cout << RED << text << RESET;
             else if (color == "blue") std::cout << BLUE << text << RESET;
